@@ -1,0 +1,9 @@
+docker build -t aqua .
+
+
+docker run -v $(pwd):/app -it -d aqua  // Linux
+docker run -v %cd%:/app -it -d aqua    // Windows
+
+docker exec -it <ID> /bin/bash
+
+cat /app/cron.log
